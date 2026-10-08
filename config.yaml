@@ -1,0 +1,55 @@
+# Lead pipeline settings. Safe to edit; changes apply on the next run.
+
+# What to search for. Each search term is combined with each district,
+# e.g. "kaderníctvo Petržalka Bratislava". Category is what goes into the sheet.
+categories:
+  Beauty & hair:
+    - kaderníctvo
+    - barbershop
+    - kozmetický salón
+    - nechtové štúdio
+  Trades:
+    - inštalatér
+    - elektrikár
+    - maliar natierač
+    - rekonštrukcie bytov
+    - zámočník
+  Health & services:
+    - zubná ambulancia
+    - fyzioterapia
+    - autoservis
+    - účtovníctvo
+
+districts:
+  - Staré Mesto
+  - Ružinov
+  - Vrakuňa
+  - Podunajské Biskupice
+  - Nové Mesto
+  - Rača
+  - Vajnory
+  - Karlova Ves
+  - Dúbravka
+  - Lamač
+  - Devín
+  - Devínska Nová Ves
+  - Záhorská Bystrica
+  - Petržalka
+  - Jarovce
+  - Rusovce
+  - Čunovo
+
+places:
+  # Max Text Search requests per run. Each run continues where the last one
+  # stopped, so all term x district combinations get covered over a few weeks.
+  searches_per_run: 60
+  # Hard stop for the calendar month (Google's free Enterprise tier is ~1000).
+  monthly_cap: 900
+  # Result pages per search (20 results each). Every page is a billed request.
+  pages_per_search: 1
+  # Pause between requests, in seconds.
+  delay_seconds: 0.3
+
+# Used by later stages.
+score_threshold: 60
+brief_model: claude-sonnet-5-5

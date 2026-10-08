@@ -1,0 +1,48 @@
+{
+  "places": [
+    {
+      "id": "ChIJ_salon_one",
+      "displayName": {"text": "Salón Krása", "languageCode": "sk"},
+      "formattedAddress": "Romanova 12, 851 02 Bratislava-Petržalka, Slovensko",
+      "addressComponents": [
+        {"longText": "Petržalka", "shortText": "Petržalka", "types": ["sublocality_level_1", "sublocality", "political"]},
+        {"longText": "Bratislava", "shortText": "Bratislava", "types": ["locality", "political"]}
+      ],
+      "nationalPhoneNumber": "0905 123 456",
+      "websiteUri": "http://www.salonkrasa.sk/",
+      "rating": 4.8,
+      "userRatingCount": 213,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "id": "ChIJ_closed",
+      "displayName": {"text": "Zatvorené kaderníctvo"},
+      "formattedAddress": "Jiráskova 3, 851 01 Bratislava, Slovensko",
+      "businessStatus": "CLOSED_PERMANENTLY"
+    },
+    {
+      "id": "ChIJ_senec",
+      "displayName": {"text": "Kaderníctvo Senec"},
+      "formattedAddress": "Lichnerova 1, 903 01 Senec, Slovensko",
+      "businessStatus": "OPERATIONAL",
+      "userRatingCount": 50
+    },
+    {
+      "id": "ChIJ_no_site",
+      "displayName": {"text": "Strih u Evy"},
+      "formattedAddress": "Údernícka 5, 851 01 Bratislava, Slovensko",
+      "nationalPhoneNumber": "02 1234 5678",
+      "rating": 4.6,
+      "userRatingCount": 87,
+      "businessStatus": "OPERATIONAL"
+    },
+    {
+      "id": "ChIJ_dnv",
+      "displayName": {"text": "Barber DNV"},
+      "formattedAddress": "Eisnerova 7, 841 07 Bratislava-Devínska Nová Ves, Slovensko",
+      "userRatingCount": 12,
+      "businessStatus": "OPERATIONAL"
+    }
+  ],
+  "nextPageToken": "page-2-token"
+}
