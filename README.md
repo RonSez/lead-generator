@@ -7,6 +7,7 @@ websites, score them, and write Slovak call briefs.
 **Built so far:** Stage 1, which finds businesses and adds them to the Leads tab.
 
 - The code is in `apps-script/Code.gs`, a single file you paste into the sheet.
+- **Live install:** the "leads" sheet of rsezganov@gmail.com, daily run ON. To deploy code changes: `cd apps-script && clasp push --force` (no pasting needed; `.clasp.json` points at the bound script).
 - Local tests: `node --test apps-script/test/code.test.js` (no live API calls).
 - The Python files (`run.py`, `leads/`, `tests/`) are from the earlier approach and are not used.
 
@@ -36,8 +37,10 @@ websites, score them, and write Slovak call briefs.
 ## Costs (kept at €0)
 Hard limits set in Google Cloud (project `project-23222bf3-aa40-487b-a97`):
 - **Places Text Search: max 32 requests/day.** Google blocks anything above this. 32 × 31 days = 992, under the free 1,000/month for Text Search Enterprise.
-- **All other Places methods: 0/day** (blocked, not used).
-- **The API key only works for** Places API (New) and PageSpeed Insights.
+- **All other Places methods: 0/day** (blocked, not used), including the media, review-post and user-content methods.
+- **The API key only works for** Places API (New) and PageSpeed Insights (PageSpeed is free).
+- **Unused default services are disabled** (BigQuery, Cloud Storage, Datastore, etc.). Only Places, PageSpeed, budgets, logging/monitoring and service management stay on.
+- Apps Script, Sheets and clasp are free.
 - **Budget alert:** a €1 budget emails you if any charge appears.
 
 In the script:
